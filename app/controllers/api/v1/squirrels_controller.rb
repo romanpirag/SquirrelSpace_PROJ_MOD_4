@@ -5,4 +5,9 @@ class Api::V1::SquirrelsController < ApplicationController
         render json: @squirrels
     end
 
+    def show
+        @squirrel = Squirrel.find(params[:id])
+        render json: @squirrel
+    end
+
 end
