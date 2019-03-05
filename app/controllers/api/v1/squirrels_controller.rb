@@ -10,4 +10,16 @@ class Api::V1::SquirrelsController < ApplicationController
         render json: @squirrel
     end
 
+    def update
+	    @squirrel = Squirrel.find(params[:id])
+        @squirrel.update(squirrel_params) 
+        render json: @squirrel  
+    end
+
+    private 
+
+    def squirrel_params
+	    params.require(:squirrel).permit(:caught)
+    end
+
 end
