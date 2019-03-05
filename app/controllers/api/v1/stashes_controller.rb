@@ -5,4 +5,8 @@ class Api::V1::StashesController < ApplicationController
         render json: @stashes
     end
 
+    def show
+        @stash = Stash.find(params[:id])
+        render json: @stash
+    end
 end
