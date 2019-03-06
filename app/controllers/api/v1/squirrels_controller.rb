@@ -1,7 +1,7 @@
 class Api::V1::SquirrelsController < ApplicationController
 
     def index
-        @squirrels = Squirrel.all.order("id DESC").all
+        @squirrels = Squirrel.all.order("id ASC").all
         render json: @squirrels
     end
 
@@ -20,6 +20,12 @@ class Api::V1::SquirrelsController < ApplicationController
 	    @squirrel = Squirrel.find(params[:id])
         @squirrel.update(squirrel_params) 
         render json: @squirrel  
+    end
+
+    def destroy
+	    @squirrel = Squirrel.find(params[:id]) 
+        @squirrel.destroy
+        render json: @squirrel
     end
 
     private 

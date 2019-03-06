@@ -3,7 +3,7 @@ Squirrel.destroy_all
 Snack.destroy_all 
 Stash.destroy_all 
 
-squirrel1 = Squirrel.create(name: "Mr. Bubbles", bio:"He is a very nice Squirrel. Has bubble gum in his fur", img:"https://i0.wp.com/anchor.hope.edu/wp-content/uploads/2016/10/squirrel.jpg")
+squirrel1 = Squirrel.create(name: "Mr. Bubbles", bio:"He is a grouchy Squirrel. Has bubble gum in his fur", img:"https://hauntedtimber.files.wordpress.com/2010/04/best-squirrel-shot1.jpg")
 squirrel2 = Squirrel.create(name: "Jessica Nutters", bio:"She is quiet and very nice. Likes reading newspapers", img:"https://i.pinimg.com/originals/ab/2e/6b/ab2e6b37c93ca5fc4af0037eca066e37.jpg")
 squirrel3 = Squirrel.create(name: "Old Harry Mason", bio:"He is old and grouchy. Dont take his nuts", img:"https://pbs.twimg.com/profile_images/2709896467/4cd02b4fc0ffaaeead6bceebb03a5e32.jpeg")
 squirrel4 = Squirrel.create(name: "Sir. Snuggles", bio:"Is a good tree climber. Likes to eat balogna sandwiches", img:"https://pbs.twimg.com/profile_images/722593836317282305/jaOaM2z-_400x400.jpg")
